@@ -1,6 +1,6 @@
 # This is an assessment from Qventus
 
-Please run `npm start` to get the application running.
+Please run `npm install` and then `npm start` to get the application running.
 
 The <Login /> component can be re-used anywhere as pleased with different validation requirements.
 
@@ -62,11 +62,13 @@ Please run `npm run build` to get a deployment version and `serve -s build` to r
 The Login component has a testing [file](./src/components/login/Login.test.tsx) that can be used to test input values and validate them to check if the functions are working correctly.
 It also checks if the validation labels appear on the page, depending on the passwordReqs values.
 
+You can read the comments inside the test file to know how it works.
+
 Run `npm test` to get the test running.
 
 # Suggestions
 
-Here is a list with the following suggestion for future development:
+Here is a list with suggestions for future development:
 
 -   The design needs to be improved
 -   The password form also needs a submit button for further validations and submition.
