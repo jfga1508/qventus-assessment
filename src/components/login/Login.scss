@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    max-width: 655px;
+    justify-content: center;
+    &-control {
+        display: flex;
+        align-items: center;
+    }
+    &-info {
+        &__label {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        &__icon {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: stretch;
+        }
+        &__para {
+            margin: 0;
+        }
+    }
+}
+.svg-inline--fa {
+    border-radius: 50%;
+    padding: 8px;
+    max-height: 32px;
+    max-width: 32px;
+    width: 32px;
+}
+.fa-xmark {
+    background-color: red;
+    color: white;
+}
+.fa-check {
+    background-color: green;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
