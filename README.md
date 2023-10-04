@@ -1,6 +1,10 @@
 # This is an assessment from Qventus
 
-The <Login /> component can be reused anywhere as pleased with different validation requirements.
+Please run `npm start` to get the application running.
+
+The <Login /> component can be re-used anywhere as pleased with different validation requirements.
+
+Right now the only requirents to validate are check for special characters, digits, uppercases and consecutive letters.
 
 Example to add all the available validations:
 
@@ -31,7 +35,9 @@ const passwordReqs = {
     specialCharacters: true,
     digits: true
 };
+
 // OR
+
 const passwordReqs = {
     specialCharacters: true,
     digits: true,
@@ -49,12 +55,22 @@ function App() {
 
 ```
 
+Please run `npm run build` to get a deployment version and `serve -s build` to run it
+
 # Testing
 
 The Login component has a testing [file](./src/components/login/Login.test.tsx) that can be used to test input values and validate them to check if the functions are working correctly.
 It also checks if the validation labels appear on the page, depending on the passwordReqs values.
 
 Run `npm test` to get the test running.
+
+# Suggestions
+
+Here is a list with the following suggestion for future development:
+
+-   The design needs to be improved
+-   The password form also needs a submit button for further validations and submition.
+-   Additional validations can be added such as minimun and maximun password length and retype password
 
 # Getting Started with Create React App
 
